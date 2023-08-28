@@ -1,0 +1,29 @@
+/* Style the table with smaller font size */
+.table {
+    font-size: 14px; /* Adjust the font size as needed */
+  }
+  
+  /* Style the outer container */
+  .outer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  /* Style the table container */
+  .table-container {
+    flex: 1;
+    overflow: hidden;
+  }
+  
+  /* Make the table scrollable when cursor is over the container */
+  .table-container:hover {
+    overflow: auto;
+  }
+  
+  /* Apply smooth scroll behavior to the table container */
+.table-container {
+    scroll-behavior: smooth;
+}
