@@ -27,3 +27,8 @@
 .table-container {
     scroll-behavior: smooth;
 }
+
+.navbar-logo {
+  width: 20%;
+  height: auto;
+}
