@@ -189,6 +189,21 @@ function updateTableFilter() {
             row.style.display = 'table-row';
         });
     }
+
+    updateRowCountInfo();
+}
+
+function updateRowCountInfo() {
+    // Calculate the number of currently shown rows
+    const visibleRows = document.querySelectorAll('#tableBody tr[style="display: table-row;"]');
+    const rowsShown = visibleRows.length;
+
+    // Calculate the total number of rows
+    const totalRows = document.querySelectorAll('#tableBody tr').length;
+
+    // Update the "rowCountInfo" element
+    const rowCountInfo = document.getElementById('rowCountInfo');
+    rowCountInfo.textContent = `Showing ${rowsShown} of ${totalRows} rows`;
 }
 
 

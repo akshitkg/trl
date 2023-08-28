@@ -32,3 +32,21 @@
   width: 20%;
   height: auto;
 }
+
+
+/* Add proper margins to the wrapper container */
+/* Add proper margins to the wrapper container */
+.embed-wrapper {
+  margin: 20px auto; /* Adjust the margin values as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Adjust the iframe size if needed */
+.embed-responsive-item {
+  width: 100%;
+  height: 100%;
+}
+
