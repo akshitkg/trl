@@ -19,7 +19,7 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link 1</a>
+                        <a class="nav-link" href="#table-container">Table</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Link 2</a>
@@ -35,13 +35,92 @@
 
     <!-- Parent Container -->
     <div class="parent-container">
+        <!-- Content Container -->
+        <div class="container mt-4 p-3" style="background-color: transparent">
+            <h2 class="text-center fw-bold mb-3">Techno-Commercial Assessment of TRL – 6 and above technologies developed in India</h2>
+            <h5 class="text-center mb-4">Electronics, Tele-communications and Manufacturing</h5>
+            <h3>Introduction</h3>
+            <p>The Technology Readiness Level (TRL) is an effective tool for assessing the development and progress of technologies in many research areas. Since its inception, numerous government organizations, research institutions and industries worldwide have adopted TRLs. TRL provides a simple yet practical approach to understanding the maturity of available technologies, and their categorization is possible through these levels.
+
+
+            </p>
+            
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>TECHNOLOGY READINESS LEVEL</th>
+                        <th>CHARACTERISTIC</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0</td>
+                        <td>TRL 1</td>
+                        <td>Basic principles observed: Scientific articles published on the principles of the new technology.</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>TRL 2</td>
+                        <td>Technology concept formulated: Publications or references highlighting the applications of the new technology</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>TRL 3</td>
+                        <td>Experimental proof of concept: Measurement of parameters in the laboratory</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>TRL 4</td>
+                        <td>Technology validated in the lab</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>TRL 5</td>
+                        <td>Technology validated in a relevant environment</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>TRL 6</td>
+                        <td>Technology demonstrated in a relevant environment</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>TRL 7</td>
+                        <td>System prototype demonstration in an operational environment</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>TRL 8</td>
+                        <td>System complete and qualified</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>TRL 9</td>
+                        <td>The actual system is proven in an operational environment</td>
+                    </tr>
+                    <!-- Add other rows here -->
+                </tbody>
+            </table>
+            
+            <p>More text here.</p>
+            <img src="centered-image.png" alt="Centered Image" class="mx-auto d-block my-4">
+            <p>Even more text here.</p>
+            
+            <h3 class="fw-bold">Left-Aligned Heading</h3>
+            <h5>Sub-heading</h5>
+            <p>Text below sub-heading.</p>
+            <!-- Repeat this block 5 more times -->
+            
+        </div>
+        
         <!-- Table Container -->
-        <div class="container mt-4 table-container border py-3" style="min-height: 40vh; max-height: 130vh; overflow-y: auto;">
+        <div class="container mt-4 table-container border py-3" id="table-container" style="min-height: 50vh; max-height: 160vh; overflow-y: auto;">
             <div class="d-flex justify-content-between mb-3" id="dropdownContainer">
                 <!-- JavaScript will populate dropdowns here -->
             </div>
-            <div class="table-responsive">
-                <table class="table table-bordered table-striped">
+            <div class="table-responsive" >
+                <table class="table table-bordered table-striped" >
                     <thead>
                         <tr>
                             <th>Title</th>
