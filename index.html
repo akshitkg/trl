@@ -1,47 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Presentation</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-    <div class="container mt-5">
-        <!-- Filter Dropdowns -->
-        <div class="container mt-5">
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="checkboxDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Select Items
-                </button>
-                <div class="dropdown-menu" aria-labelledby="checkboxDropdown" id="checkboxMenu1">
-                    <!-- JavaScript will populate this part -->
-                </div>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkbox Dropdowns</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-logo" href="#" style="width: 20%; height: auto;"
+          ><img src="iitr.png" alt="IITR Logo" style="width: 75%; height: auto;"/></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav style="font-size: small; font-weight:600;">
+            <li class="nav-item">
+              <a class="nav-link" href="#overview-container">Overview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#table-container">Compendium of Technologies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tableauContainer">Summary of TRL</a>
+            </li>
+          </ul>
         </div>
-        <!-- Repeat the above structure for each filter column -->
+        <!-- <img src="iitr.png" alt="Sponsor Logo" style="width: 20%; height: auto;" /> -->
+        <a class="navbar-logo" href="#" style="width: 20%; height: auto;"
+          ><img src="iitr.png" alt="IITR Logo" style="width: 75%; height: auto;"/></a>
+      </div>
+    </nav>
 
-        <!-- Table to Display Data -->
-        <table class="table">
+    <!-- Parent Container -->
+    <div class="parent-container">
+      <!-- Content Container -->
+      <div class="container mt-4 p-3" style="background-color: transparent" id="overview-container">
+        <h2 class="text-center fw-bold mb-3">
+          Techno-Commercial Assessment of TRL – 6 and above technologies
+          developed in India
+        </h2>
+        <h5 class="text-center mb-4">
+          Electronics, Tele-communications and Manufacturing
+        </h5>
+        <h3 class="mb-3">Introduction</h3>
+        <p class="mb-4">
+          The Technology Readiness Level (TRL) is an effective tool for
+          assessing the development and progress of technologies in many
+          research areas. Since its inception, numerous government
+          organizations, research institutions and industries worldwide have
+          adopted TRLs. TRL provides a simple yet practical approach to
+          understanding the maturity of available technologies, and their
+          categorization is possible through these levels.
+        </p>
+
+        <table class="table table-bordered table-striped">
+          <thead>
+            <tr>
+              <th></th>
+              <th>TECHNOLOGY READINESS LEVEL</th>
+              <th>CHARACTERISTIC</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>0</td>
+              <td>TRL 1</td>
+              <td>
+                Basic principles observed: Scientific articles published on the
+                principles of the new technology.
+              </td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>TRL 2</td>
+              <td>
+                Technology concept formulated: Publications or references
+                highlighting the applications of the new technology
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>TRL 3</td>
+              <td>
+                Experimental proof of concept: Measurement of parameters in the
+                laboratory
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>TRL 4</td>
+              <td>Technology validated in the lab</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>TRL 5</td>
+              <td>Technology validated in a relevant environment</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>TRL 6</td>
+              <td>Technology demonstrated in a relevant environment</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>TRL 7</td>
+              <td>
+                System prototype demonstration in an operational environment
+              </td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>TRL 8</td>
+              <td>System complete and qualified</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>TRL 9</td>
+              <td>The actual system is proven in an operational environment</td>
+            </tr>
+            <!-- Add other rows here -->
+          </tbody>
+        </table>
+
+        <p class="mb-3">
+          Projects with low TRLs are associated with high risks due to
+          uncertainty, the possibility of failure and the unavailability of
+          necessary resources. Managers often need to identify appropriate
+          technologies to achieve business goals. Thus, knowledge of TRLs for
+          existing technologies is highly beneficial for reducing the project's
+          overall risk by using well-adopted and widely tested alternatives.
+          This can also be used effectively to understand the limitations of
+          such alternatives and find ways to solve and overcome them for a
+          particular use case.
+        </p>
+        <div class="text-center">
+          <img
+            src="description.png"
+            alt="Centered Image"
+            class="img-fluid mx-auto d-block my-4"
+            style="max-width: 100%; height: 30vh; margin: 20px"
+          />
+        </div>
+        <p class="mb-3">
+          This study aims to understand the status of technologies in leading
+          academic institutions, research organizations and industries. A
+          summary of the results achieved for the objectives proposed in this
+          study is provided below.
+        </p>
+
+        <h3 class="fw-bold mt-5 mb-4">Objectives</h3>
+        <h5 class="text-decoration-underline">
+          Objective 1: To conduct the case studies on success stories of the
+          technologies(projects) which are in the TRL-6 and above in academia,
+          research labs
+        </h5>
+        <p class="mb-4">
+          A case study was conducted to understand the essential factors that
+          help improve the TRL of technologies, thereby leading to successful
+          commercialization. This study considers assistive technologies for
+          people with disability being developed at the TTK Center for
+          Rehabilitation Research and Device Development (R2D2) under Prof.
+          Sujatha Srinivasan at IIT Madras. This study analyses the need for
+          such technologies and the importance of customer-centric design and
+          affordability to gain an edge over competitors in the market. It also
+          highlights the importance of industry collaboration and innovation,
+          vital for surpassing TRL6 and above, and how acquiring funds can be a
+          challenge in developing novel technologies.
+        </p>
+        <h5 class="text-decoration-underline">
+          Objective 2: Barriers Hindering Commercialization of TRL 6 And Above
+          Technologies
+        </h5>
+        <p class="mb-4">
+          This study also focuses on the identification of barriers that hinder
+          the commercialization of TRL6 and above technologies. This study aims
+          to develop a Fuzzy Analytic Hierarchy Process (AHP) model for
+          identifying the relative importance of the barriers. A fuzzy-AHP-based
+          questionnaire was prepared for this study, and data was collected from
+          the stakeholder's perspective wherein each criteria was compared based
+          on the Saaty scale of 1 – 9 (1 – represents equal importance between
+          the compared criteria, 9 – represents absolute relative importance).
+          Based on the results of the analysis, the existence of an identical
+          successfully commercialized project for a similar environment
+          criterion has the highest weight compared to others. In contrast,
+          indigenous barriers, system complexity, planning and review and
+          validity of the assessment of TRL are considered to be the least
+          essential barriers towards the commercialization of technologies
+        </p>
+        <h5 class="text-decoration-underline">
+          Objective 3: Artificial Intelligence-based approach for prediction of
+          TRL
+        </h5>
+        <p class="mb-4">
+          The current methodology involves a questionnaire-evaluation approach,
+          followed by an expert to complete the assessment process. A
+          significant disadvantage of this approach is its labour intensiveness
+          for acquiring and processing data for numerous TRL indicators. This
+          approach is also subjective and, thus, suffers from biases. Thus,
+          there is scope for improvement in existing methodologies and novel
+          approaches that mitigate subjectivity in TRLs. This work proposes a
+          Natural Language Processing-based approach for classifying
+          technologies depending on TRL from bibliometric data into Low, Medium
+          and High TRL categories. Through this categorization, technologies in
+          similar fields can be easily identified. Logistic Regression, Random
+          Forest and Multinomial Naïve Bayes models were trained for the
+          classification of data, and an accuracy of over 60% was achieved for
+          these models.
+        </p>
+        <h5 class="text-decoration-underline">
+          Objective 4: Development of a database for TRL of projects in academia
+          and research organizations.
+        </h5>
+        <p class="mb-4">
+          This study consists of TRL data for over 850 funded projects across
+          interdisciplinary research fields that are being developed in premier
+          institutes across India. Of these, 706 projects are interdisciplinary,
+          122 are related to Electronics & Telecommunications, and 24 are
+          related to Manufacturing. The variation of TRL in these projects over
+          the years is also studied.
+        </p>
+        <h5 class="text-decoration-underline">
+          Objective 5: Existing successful epitomes in Indian Institutes
+        </h5>
+        <p class="mb-4">
+          Projects that have successfully achieved TRL6 and above were
+          identified across various institutes. For the TRL data collected, 466
+          projects successfully reached TRL6 or above in 2020. To compare the
+          variation in TRL, there were 206 projects above TRL6 in 2019. Older
+          institutes lead significantly in the number of projects and the
+          improvement in TRL of technologies based on the data collected. A
+          summary of this data is provided in the submitted report. The database
+          based on TRL data of these projects is currently being developed to
+          help track the progress and maturity of technologies.
+        </p>
+        <h5 class="text-decoration-underline">
+          Objective 6: To develop policy recommendations
+        </h5>
+        <p class="mb-4">
+          Policy recommendations are being developed based on the results of the
+          analysis. It will help identify barriers hindering the
+          commercialization of projects and also promote the collaboration of
+          researchers working in similar and interdisciplinary fields of
+          research to fast-track technology development. It is also helpful for
+          funding agencies to organize data on ongoing / completed projects and
+          assess outcomes.
+        </p>
+        <!-- Repeat this block 5 more times -->
+      </div>
+
+      <!-- Table Container -->
+      <div
+        class="container mt-4 mb-5 table-container border py-3"
+        id="table-container"
+        style="min-height: 50vh; max-height: 160vh; overflow-y: auto"
+      >
+        <div class="d-flex justify-content-between mb-3" id="dropdownContainer">
+          <!-- JavaScript will populate dropdowns here -->
+        </div>
+        <div class="table-responsive">
+          <div
+            class="text-left mt-3"
+            id="rowCountInfo"
+            style="color: black"
+          ></div>
+          <table class="table table-bordered table-striped ">
             <thead>
-                <tr>
-                    <th>Title</th>
-                    <th>Research Lab</th>
-                    <th>Investigator Details</th>
-                    <th>Contact Details</th>
-                    <th>Application Domain</th>
-                    <th>TRL (2019-2020)</th>
-                    <th>Current TRL</th>
-                    <th>Status of Technology</th>
-                    <!-- Add other column headers here -->
-                </tr>
+              <tr>
+                <th>Title</th>
+                <th>Research Lab</th>
+                <th>Investigator Details</th>
+                <th>Contact Details</th>
+                <th>Application Domain</th>
+                <th>TRL (2019-2020)</th>
+                <th>Current TRL</th>
+                <th>Status of Technology</th>
+                <!-- Add other column headers here -->
+              </tr>
             </thead>
             <tbody id="tableBody">
-                <!-- JavaScript will populate this part -->
+              <!-- JavaScript will populate this part -->
             </tbody>
-        </table>
+          </table>
+        </div>
+      </div>
+      
+
+      <div class='container mt-4 mb-5' id='tableauContainer'>
+        <h3 class="text-left mb-4">Tableau Dashboard</h3>
+        <div class='tableauPlaceholder' id='viz1693296459300' style='position: relative'>
+          <noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;TR&#47;TRLSummary&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript>
+          <object class='tableauViz'  style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='TRLSummary&#47;Dashboard1' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;TR&#47;TRLSummary&#47;Dashboard1&#47;1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+          </object>
+        </div>
+      </div>
+      <script type='text/javascript'>
+        var divElement = document.getElementById('viz1693296459300');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        if ( divElement.offsetWidth > 800 ) {
+          vizElement.style.width='1000px';
+          vizElement.style.height='827px';
+        } else if ( divElement.offsetWidth > 500 ) {
+          vizElement.style.width='1000px';
+          vizElement.style.height='827px';
+        } else {
+          vizElement.style.width='100%';
+          vizElement.style.height='2027px';
+        }
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+      </script>
+      
     </div>
 
-    <script src="script.js"></script>
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
+    <script src="withXLSX.js"></script>
+  </body>
 </html>

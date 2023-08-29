@@ -93,61 +93,10 @@ function createDropdownWithCheckboxes(data, buttonName, columnIndex) {
         e.stopPropagation();
     });
 
-    // New code for pagination
-    // const allCheckboxesUnselected = Object.values(selectedCheckboxValues).every(values => values.length === 0);
 
-    // // If all checkboxes are unselected, show all rows
-    // if (allCheckboxesUnselected) {
-    //     rows.forEach(row => {
-    //         row.style.display = 'table-row';
-    //     });
-    // }
-
-    // // Add the following code to update the pagination
-    // updatePagination();
 
 }
 
-// function updatePagination() {
-//     const rowsPerPage = 30;
-//     const totalRows = document.querySelectorAll('#tableBody tr[style="display: table-row;"]').length;
-
-//     const pageCount = Math.ceil(totalRows / rowsPerPage);
-//     const paginationContainer = document.getElementById('pagination');
-//     paginationContainer.innerHTML = ''; // Clear previous pagination items
-
-//     for (let i = 1; i <= pageCount; i++) {
-//         const li = document.createElement('li');
-//         li.classList.add('page-item');
-//         const link = document.createElement('a');
-//         link.classList.add('page-link');
-//         link.href = '#';
-//         link.textContent = i;
-//         li.appendChild(link);
-//         paginationContainer.appendChild(li);
-
-//         link.addEventListener('click', function () {
-//             showPage(i);
-//         });
-//     }
-
-//     showPage(1); // Show the first page by default
-// }
-
-// function showPage(pageNumber) {
-//     const rowsPerPage = 30;
-//     const startIndex = (pageNumber - 1) * rowsPerPage;
-//     const endIndex = startIndex + rowsPerPage;
-
-//     const rows = document.querySelectorAll('#tableBody tr');
-//     rows.forEach((row, index) => {
-//         if (index >= startIndex && index < endIndex) {
-//             row.style.display = 'table-row';
-//         } else {
-//             row.style.display = 'none';
-//         }
-//     });
-// }
 
 
 
