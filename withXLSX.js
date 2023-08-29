@@ -1,6 +1,6 @@
 const dropdownData = [
     ['IISc', 'IIT Roorkee', 'IIT Delhi', 'IIT BHU', 'IIT Bhubaneshwar', 'IIT Bombay', 'IIT GN', 'IIT Hyd', 'IIT Kanpur', 'IIT Madras', 'IIT Patna'],
-    ['ETC', 'M', 'Other'],
+    ['Electronics & Telecommunications', 'Manufacturing', 'Other'],
     [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
     [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
     ['Commercialized', 'Demonstration', 'Lab', 'Pilot']
@@ -9,8 +9,8 @@ const dropdownData = [
 const dropdownButtonNames = [
     'Research Lab',
     'Application Domain',
-    'TRL (2019-2020)',
-    'Current TRL',
+    'TRL of technology (2019 - 2020)',
+    'TRL of technology (2020 - 2021)',
     'Status of Technology'
 ];
 
@@ -24,7 +24,7 @@ const columnMappings = {
 
 async function loadTableData() {
     try {
-        const response = await fetch('data.xlsx'); // Replace with actual Excel file path
+        const response = await fetch('new_data.xlsx'); // Replace with actual Excel file path
         const data = await response.arrayBuffer();
         const workbook = XLSX.read(data, { type: 'array' });
         const sheetName = workbook.SheetNames[0]; // Assuming you want to read the first sheet
@@ -96,10 +96,6 @@ function createDropdownWithCheckboxes(data, buttonName, columnIndex) {
 
 
 }
-
-
-
-
 
 
 function updateTableFilter() {
