@@ -10,7 +10,7 @@ const dropdownButtonNames = [
     'Research Lab',
     'Application Domain',
     //'TRL of technology (2019 - 2020)',
-    'TRL of technology (2020 - 2021)',
+    'TRL',
     'Status of Technology'
 ];
 
@@ -199,5 +199,5 @@ function prevSlide() {
     showSlides();
 }
 
-setInterval(nextSlide, 2000); // Auto-scroll every 4 seconds
+setInterval(nextSlide, 2500); // Auto-scroll every 4 seconds
 showSlides(); // Initial slide display
