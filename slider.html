@@ -1,0 +1,249 @@
+<!-- contains first iteration code for Horizontal image slider -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Slider</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .slider-section {
+            margin: 30px;
+            height: 650px;
+            /* Set your desired height */
+            overflow: hidden;
+            background-color: #F2F2F2;
+            padding: 30px 10px 10px 10px;
+            /* width:80%; */
+            /* align-self: center; */
+        }
+
+        .slider-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            height: 100%;
+            /* width:75%; */
+        }
+
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+            position: relative;
+            height: 100%;
+            padding-right: 30px;
+            padding-left: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* justify-items: center; */
+            text-align: center;
+        }
+
+        .slide img {
+            width: 100%;
+            /* margin-bottom: 10px; */
+            height: 85%;
+            object-fit: contain;
+            margin-bottom: 8px;
+            /* Maintain aspect ratio */
+            /* height: 100%; */
+            /* Set your desired height */
+        }
+
+        .controls {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .control-btn {
+            cursor: pointer;
+            background: rgba(163, 160, 160, 0.5);
+            color: #000000;
+            border: none;
+            padding: 10px;
+        }
+
+        .slide-title,
+        .slide-description {
+            position: absolute;
+            bottom: 20px;
+            left: 30px;
+            color: #000000;
+            display: flex;
+            text-align: center;
+        }
+
+        .slide-title {
+            font-size: 20px;
+            margin-bottom: 5px;
+            font-weight: 450;
+        }
+
+        .slide-description {
+            bottom: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="slider-section">
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <img src="sponsor_images/planys_tech.jpg" alt="Image 1">
+                    <div class="slide-title">Planys Technologies</div>
+                    <div class="slide-description">Remotely Operated Vehicles (ROVs) for underwater inspection and asset
+                        integrity monitoring </div>
+                </div>
+                <div class="slide">
+                    <img src="sponsor_images/SIVA_mobility.jpg" alt="Image 2">
+                    <div class="slide-title">SIVA Mobility</div>
+                    <div class="slide-description">Two-wheeled electric vehicle for urban mobility and easy cruising through
+                        heavy traffic</div>
+                </div>
+                <div class="slide">
+                    <img src="sponsor_images/nocca_robotics.jpg" alt="Image 2">
+                    <div class="slide-title">Nocca robotics</div>
+                    <div class="slide-description">A waterless, autonomous, multi-tilt compatible robot for cleaning solar
+                        modules that is easy to operate and maintain.</div>
+                </div>
+                <div class="slide">
+                    <img src="sponsor_images/neomotion.jpg" alt="Image 2">
+                    <div class="slide-title">Neomotion</div>
+                    <div class="slide-description">Assistive electric mobility solutions for people with disabilities</div>
+                </div>
+                <div class="slide">
+                    <img src="sponsor_images/Flowtrik.png" alt="Image 2">
+                    <div class="slide-title">Flowtrik</div>
+                    <div class="slide-description">Development of portable home charging, public charging and battery swapping
+                        technologies and accelerating EV infrastructure</div>
+                </div>
+                <div class="slide">
+                    <img src="sponsor_images/CDSpace_IITKanpur.jpg" alt="Image 2">
+                    <div class="slide-title">CDSpace</div>
+                    <div class="slide-description">Development of composite vertical takeoff and landing (VTOL) UAV for
+                        commercial applications and aerial mapping</div>
+                </div>
+                <div class="slide">
+                    <img src="sponsor_images/ather.jpg" alt="Image 2">
+                    <div class="slide-title">Ather Energy</div>
+                    <div class="slide-description">Smart and efficient electric scooters with zero lag throttle response</div>
+                </div>
+                <div class="slide">
+                    <img src="sponsor_images/agnikul.jpg" alt="Image 2">
+                    <div class="slide-title">Agnikul Cosmos</div>
+                    <div class="slide-description">Development of cost-effective single-state launch vehicles for micro and
+                        nanosatellites </div>
+                </div>
+                <div class="slide">
+                    <img src="sponsor_images/aerostrovilos.jpg" alt="Image 2">
+                    <div class="slide-title">Aerostrovilos</div>
+                    <div class="slide-description">Development of micro gas turbines for power generation</div>
+                </div>
+                <div class="slide">
+                    <img src="sponsor_images/Skillveri_IITMadras.jpg" alt="Image 2">
+                    <div class="slide-title">Skillveri</div>
+                    <div class="slide-description">XR-based simulation training for welding and spray painting</div>
+                </div>
+                <div class="slide">
+                    <img src="sponsor_images/skyraptor.png" alt="Image 2">
+                    <div class="slide-title">Skyraptor</div>
+                    <div class="slide-description">Power booster drivetrain technology to improve range for city bikes</div>
+                </div>
+                <div class="slide">
+                    <img src="sponsor_images/Smart_solar_tree_IITBHU.jpg" alt="Image 2">
+                    <div class="slide-title">Titlis - Smart Solar Tree</div>
+                    <div class="slide-description">Alternative solar energy conversion over conventional methods and lower
+                        land requirement
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="sponsor_images/Switchon_AI_inspection.png" alt="Image 2">
+                    <div class="slide-title">Switchon</div>
+                    <div class="slide-description">Digital Twins for Manufacturing Intelligence: Automates quality inspection
+                        to reduce quality costs and ensure internal/external quality compliance in processes using
+                        artificial intelligence and computer vision</div>
+                </div>
+                <div class="slide">
+                    <img src="sponsor_images/Ubiqare.png" alt="Image 2">
+                    <div class="slide-title">Ubiqare</div>
+                    <div class="slide-description">Hybrid Health Platform: Combines telemedicine and clinical network of
+                        proximity centers for home health care service & supportive care to post-acute and chronic
+                        patients at home.</div>
+                </div>
+                <div class="slide">
+                    <img src="sponsor_images/Infyu labs.jpg" alt="Image 2">
+                    <div class="slide-title">Infyu labs</div>
+                    <div class="slide-description">Artificial intelligence-based technologies for non-destructive testing and
+                        quality analysis for perishable goods</div>
+                </div>
+                <div class="slide">
+                    <img src="sponsor_images/MotorZ_IITM.jpg" alt="Image 2">
+                    <div class="slide-title">MotorZ</div>
+                    <div class="slide-description">High-efficiency traction motors tailored for difficult riding conditions in
+                        India.</div>
+                </div>
+                <!-- Add more slides as needed -->
+            </div>
+
+            <div class="controls">
+                <button class="control-btn" onclick="prevSlide()">❮</button>
+                <button class="control-btn" onclick="nextSlide()">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let slideIndex = 1;
+
+        function showSlides() {
+            const slides = document.querySelector('.slider');
+
+            if (slideIndex > slides.children.length) {
+                slideIndex = 1;
+            }
+
+            if (slideIndex < 1) {
+                slideIndex = slides.children.length;
+            }
+
+            slides.style.transform = `translateX(${-100 * (slideIndex - 1)}%)`;
+        }
+
+        function nextSlide() {
+            slideIndex++;
+            showSlides();
+        }
+
+        function prevSlide() {
+            slideIndex--;
+            showSlides();
+        }
+
+        setInterval(nextSlide, 2000); // Auto-scroll every 4 seconds
+        showSlides(); // Initial slide display
+    </script>
+
+</body>
+
+</html>

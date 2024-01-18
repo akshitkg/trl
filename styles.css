@@ -1,38 +1,142 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.slider-section {
+  /* margin: 30px; */
+  height: 700px;
+  /* Set your desired height */
+  overflow: hidden;
+  background-color: #f2f2f2;
+  padding: 30px 10px 10px 10px;
+  width:80%;
+  margin-bottom:50px;
+  /* align-self: center; */
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
+  /* width:75%; */
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  height: 100%;
+  padding-right: 30px;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* justify-items: center; */
+  text-align: center;
+  height:100%;
+}
+
+.slide img {
+  width: 100%;
+  /* margin-bottom: 10px; */
+  height: 75%;
+  object-fit: contain;
+  /* margin-bottom: 8px; */
+  /* Maintain aspect ratio */
+  /* height: 100%; */
+  /* Set your desired height */
+}
+
+.controls {
+  position: absolute;
+  /* bottom:30%; */
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.control-btn {
+  cursor: pointer;
+  background: rgba(163, 160, 160, 0.5);
+  color: #000000;
+  border: none;
+  padding: 10px;
+}
+
+.slide-title,
+.slide-description {
+  position: absolute;
+  /* bottom: 40px; */
+  left: 30px;
+  color: #000000;
+  display: flex;
+  text-align: left;
+}
+
+.slide-title {
+  font-size: 20px;
+  /* margin-bottom: 6px; */
+  font-weight: 450;
+  bottom:40px;
+  text-decoration: underline;
+}
+
+.slide-description {
+  bottom: 3px;
+  font-size: 14px;
+}
+
+.parent-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* Style the table with smaller font size */
 .table {
-    font-size: 14px; /* Adjust the font size as needed */
-  }
-  
-  /* Style the outer container */
-  .outer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-  
-  /* Style the table container */
-  .table-container {
-    flex: 1;
-    overflow: hidden;
-  }
-  
-  /* Make the table scrollable when cursor is over the container */
-  .table-container:hover {
-    overflow: auto;
-  }
-  
-  /* Apply smooth scroll behavior to the table container */
+  font-size: 14px; /* Adjust the font size as needed */
+}
+
+/* Style the outer container */
+.outer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Style the table container */
 .table-container {
-    scroll-behavior: smooth;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* Make the table scrollable when cursor is over the container */
+.table-container:hover {
+  overflow: auto;
+}
+
+/* Apply smooth scroll behavior to the table container */
+.table-container {
+  scroll-behavior: smooth;
 }
 
 .navbar-logo {
   width: 20%;
   height: auto;
 }
-
 
 /* Add proper margins to the wrapper container */
 /* Add proper margins to the wrapper container */
@@ -49,4 +153,3 @@
   width: 100%;
   height: 100%;
 }
-

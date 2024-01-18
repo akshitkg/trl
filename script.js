@@ -1,7 +1,7 @@
 const dropdownData = [
     ['IISc', 'IIT Roorkee', 'IIT Delhi', 'IIT BHU', 'IIT Bhubaneshwar', 'IIT Bombay', 'IIT GN', 'IIT Hyd', 'IIT Kanpur', 'IIT Madras', 'IIT Patna'],
     ['Electronics & Telecommunications', 'Manufacturing', 'Other'],
-    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+    //[0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
     [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
     ['Commercialized', 'Demonstration', 'Lab', 'Pilot']
 ];
@@ -9,7 +9,7 @@ const dropdownData = [
 const dropdownButtonNames = [
     'Research Lab',
     'Application Domain',
-    'TRL of technology (2019 - 2020)',
+    //'TRL of technology (2019 - 2020)',
     'TRL of technology (2020 - 2021)',
     'Status of Technology'
 ];
@@ -19,7 +19,7 @@ const columnMappings = {
     2: 5, // Dropdown 2 maps to Column 5
     3: 6, // Dropdown 3 maps to Column 6
     4: 7, // Dropdown 4 maps to Column 7
-    5: 8  // Dropdown 5 maps to Column 8
+    //5: 8  // Dropdown 5 maps to Column 8
 };
 
 async function loadTableData() {
@@ -167,7 +167,37 @@ createDropdownWithCheckboxes(dropdownData[0], dropdownButtonNames[0], 1); // Cor
 createDropdownWithCheckboxes(dropdownData[1], dropdownButtonNames[1], 4); // Corresponds to Column 5
 createDropdownWithCheckboxes(dropdownData[2], dropdownButtonNames[2], 5); // Corresponds to Column 6
 createDropdownWithCheckboxes(dropdownData[3], dropdownButtonNames[3], 6); // Corresponds to Column 7
-createDropdownWithCheckboxes(dropdownData[4], dropdownButtonNames[4], 7); // Corresponds to Column 8
+//createDropdownWithCheckboxes(dropdownData[4], dropdownButtonNames[4], 7); // Corresponds to Column 8
 
 
 // updatePagination();
+
+
+let slideIndex = 1;
+
+function showSlides() {
+    const slides = document.querySelector('.slider');
+
+    if (slideIndex > slides.children.length) {
+        slideIndex = 1;
+    }
+
+    if (slideIndex < 1) {
+        slideIndex = slides.children.length;
+    }
+
+    slides.style.transform = `translateX(${-100 * (slideIndex - 1)}%)`;
+}
+
+function nextSlide() {
+    slideIndex++;
+    showSlides();
+}
+
+function prevSlide() {
+    slideIndex--;
+    showSlides();
+}
+
+setInterval(nextSlide, 2000); // Auto-scroll every 4 seconds
+showSlides(); // Initial slide display
