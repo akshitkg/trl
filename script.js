@@ -199,5 +199,5 @@ function prevSlide() {
     showSlides();
 }
 
-setInterval(nextSlide, 2500); // Auto-scroll every 4 seconds
+setInterval(nextSlide, 5000); // Auto-scroll every 5 seconds
 showSlides(); // Initial slide display
